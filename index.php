@@ -117,19 +117,20 @@ else // if the form hasn't been submitted, look for an id to redirect to
 		}
 		
 		h1 {
-			font-size: 2em;
+			font-size: 5em;
 			padding: 0;
 			margin: 0;
 			color:#fff;
 		}
 
 		h4 {
-			font-size: 1em;
+			font-size: 1.5em;
 			font-weight: bold;
 		}
 		
 		form {
-			width: 28em;
+			width: 60em;
+			height: 8em;
 			background-color: #eee;
 			border: 1px solid #ccc;
 			margin-left: auto;
@@ -158,7 +159,7 @@ else // if the form hasn't been submitted, look for an id to redirect to
 		}
 
 		.error, .success {
-			font-size: 1.2em;
+			font-size: 2.0em;
 			font-weight: bold;
 		}
 		
@@ -183,7 +184,7 @@ else // if the form hasn't been submitted, look for an id to redirect to
 		<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 		
 			<fieldset>
-				<label for="longurl">Enter your long URL:</label>
+				<label for="longurl"><h4>Enter your long URL:</h4></label>
 				<input type="text" name="longurl" id="longurl" />
 				<input type="submit" name="submit" id="submit" value="Short It!" />
 			</fieldset>
@@ -195,4 +196,3 @@ else // if the form hasn't been submitted, look for an id to redirect to
 	</body>
 
 </html>
-		
